@@ -1,0 +1,175 @@
+:root {
+  --main-color: #b01e89;
+  --accent-color: #76b0c5;
+  --text-color: #070707;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #a8d4e2;
+  color: var(--text-color);
+}
+
+header {
+  background-color: var(--main-color);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover, .active {
+  text-decoration: underline;
+}
+
+.hero {
+  background-image: url('../img/vietnam-trip.webp');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  padding: 150px 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h2 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.btn {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  border: 1px solid white;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+  color: #000;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  background-color: var(--accent-color);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #155d74;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+}
+.dest-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.dest-grid article {
+  width: 300px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.dest-grid img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+  padding: 1rem;
+}
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+}
+/* ===== Page Titles ===== */
+.page-title {
+  text-align: center;
+  font-size: 2.8rem;           /* make it large */
+  font-weight: 700;            /* make it bold */
+  margin: 40px 0 20px;         /* space above and below */
+  color: #880E4F;              /* deep magenta tone (matches your theme) */
+  text-transform: uppercase;   /* make all caps */
+  letter-spacing: 1px;         /* small spacing between letters */
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2); /* soft shadow for contrast */
+}
+.page-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: #C2185B;
+  margin: 10px auto 0;  /* centers the line */
+  border-radius: 2px;
+}
+ /* ===== Page Titles (for all pages) ===== */
+.page-title {
+  text-align: center;
+  font-size: 3rem;               /* bigger text */
+  font-weight: 800;              /* thicker font */
+  margin: 40px 0 30px;           /* spacing top & bottom */
+  color: #8E24AA;                /* purple tone, matches theme */
+  text-transform: uppercase;
+  letter-spacing: 2px;           /* spacing between letters */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+/* Decorative underline */
+.page-title::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 4px;
+  background-color: #BA68C8;
+  margin: 10px auto;
+  border-radius: 2px;
+}
